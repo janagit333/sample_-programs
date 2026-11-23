@@ -7,4 +7,5 @@ test('meesho suggestions ', async ({ page }) => {
 
     await meeshoPage.search('mobile');
     console.log(await meeshoPage.getSuggestions());
+    console.log("peddaiah")
 })
