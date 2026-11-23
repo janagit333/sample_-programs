@@ -9,6 +9,7 @@ test('adding product ot cart', async ({ page }) => {
     await page.getByRole('button', { name: 'Log in' }).click();
     const Text = await page.getByRole('link', { name: 'PRODUCT STORE' })
     console.log(Text.textContent());
+    console.log("peddaiah");
 
 
 
