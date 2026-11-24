@@ -26,5 +26,6 @@ export class MeeshoSuggestions {
     async getSuggestions() {
         await this.suggestionpopup.first().waitFor({ state: 'visible' });
         return this.suggestionpopup.allTextContents();
+        console.log("prathap");
     }
 }
