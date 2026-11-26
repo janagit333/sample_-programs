@@ -43,7 +43,7 @@ console.log(arr1)
 
 
 console.log(arr)
-//---------palindrome------------
+//------------------------------palindrome--------------------------------------------------------
 let palindrome: string = "madam";
 let pali: string = palindrome.toLocaleLowerCase()
 let reverse: string = '';
@@ -60,3 +60,56 @@ if (palindrome == reverse) {
 
     console.log(" the given string is not palindrome")
 }
+
+
+//remove duplicates in string//
+
+let stry: string = "tejuenfhwasdywwgewyewieweqoeowqeeweweqwknewie";
+let stryw: string = '';
+
+for (let i = 0; i < stry.length; i++) {
+
+    if (!stryw.includes(stry[i])) {
+        stryw = stryw + stry[i]
+
+
+    }
+
+}
+
+console.log(stryw)
+
+//remove duplicates in string//
+
+
+let stry1: string = "tejuenfhwasdywwgewyewieweqoeowqeeweweqwknewie";
+let stryw1: string = '';
+
+for (let i = 0; i < stry1.length; i++) {
+
+    for (let j = i + 1; j < stry1.length; j++) {
+
+        if (stry1[i] === stry1[j]) {
+
+            if (!stryw1.includes(stry1[i])) {
+                stryw1 = stryw1 + stry1[i]
+
+            }
+            break;
+        }
+
+    }
+
+}
+
+console.log(stryw1)
+
+let n: number = 5;
+
+let sum: number = 0;
+
+for (let i = 1; i <= n; i++) {
+
+    sum = sum + i
+}
+console.log(sum)
